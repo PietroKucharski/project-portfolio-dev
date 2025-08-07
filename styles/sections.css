@@ -1,0 +1,68 @@
+#intro {
+  background-image: url("/assets/images/Background_Intro.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 163px 57px 163px;
+  color: var(--gray-200);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+    align-items: center;
+    gap: 56px;
+    margin-bottom: 80px;
+  }
+
+  .avatar {
+    img:nth-child(1) {
+      width: 87px;
+      height: 87px;
+      border-radius: 100%;
+      object-fit: cover;
+      border: 2px solid var(--red);
+    }
+
+    img:nth-child(2) {
+      width: 32px;
+      height: 32px;
+      position: absolute;
+      left: 955px;
+      top: 180px;
+    }
+  }
+
+  .header-text {
+    text-align: center;
+    span {
+      color: var(--red);
+    }
+
+    h1 {
+      color: var(--gray-100);
+      margin-bottom: 20px;
+    }
+
+    p:nth-child(3) {
+      color: var(--gray-300);
+    }
+  }
+
+  .tags {
+    display: flex;
+    gap: 16px;
+    .tag {
+      display: flex;
+      align-items: center;
+      padding: 8px 16px;
+      gap: 8px;
+      border-radius: 999px;
+      background-color: var(--gray-400);
+    }
+  }
+}
