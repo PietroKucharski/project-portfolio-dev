@@ -65,6 +65,12 @@
       background-color: var(--gray-400);
     }
   }
+
+  img:nth-child(3) {
+    width: 32px;
+    height: 32px;
+    margin-top: 94px;
+  }
 }
 
 #projects {
@@ -80,9 +86,11 @@
   .projects-header {
     text-align: center;
     margin-bottom: 56px;
+
     span {
       color: var(--red);
     }
+
     h2 {
       margin-top: 8px;
       color: var(--gray-100);
@@ -105,10 +113,14 @@
     background-color: var(--gray-400);
     border-radius: 12px;
 
+      &:hover {
+    border: 1px solid var(--gray-100);
+  }
+
     img {
       border-radius: 8px;
-
     }
+
     h3 {
       color: var(--gray-100);
       margin-bottom: 8px;
@@ -116,6 +128,141 @@
 
     p {
       color: var(--gray-200);
+    }
+  }
+}
+
+#services {
+  display: flex;
+  background-color: var(--gray-600);
+  padding: 88px 120px 120px 120px;
+  flex-direction: column;
+  gap: 56px;
+
+  .services-header {
+    text-align: center;
+
+    span {
+      color: var(--red);
+    }
+
+    h2 {
+      color: var(--gray-100);
+      margin-top: 8px;
+    }
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
+  }
+
+  .service-card {
+    border: 2px solid var(--gray-500);
+    border-radius: 12px;
+    width: 280px;
+    padding: 20px;
+    gap: 20px;
+
+    img {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      margin-bottom: 20px;
+    }
+
+    .card-text {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: var(--gray-100);
+        margin-bottom: 8px;
+      }
+
+      p {
+        color: var(--gray-200);
+      }
+    }
+  }
+}
+
+#contact {
+  background-image: url("/assets/images/Background_Contacts.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contact-container {
+    padding: 128px 120px 200px 120px;
+  }
+
+  .contact-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 48px;
+
+    span {
+      color: var(--purple);
+    }
+
+    h2 {
+      color: var(--gray-100);
+    }
+
+    p {
+      color: var(--gray-200);
+    }
+  }
+
+  .social-button {
+    display: flex;
+    width: 400px;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--gray-400);
+    border-radius: 8px;
+    margin-bottom: 16px;
+
+    & > div {
+      width: 100%;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    & > div img {
+      width: 28px;
+      height: 28px;
+    }
+
+    &:hover {
+      border: 1px solid var(--blue);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: right;
+    }
+
+    p {
+      color: var(--gray-200);
+      font-weight: 500;
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
     }
   }
 }
